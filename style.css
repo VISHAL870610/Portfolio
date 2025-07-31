@@ -1,0 +1,307 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+nav{
+    background-color:#001f3f;
+    color:#ffffff;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+nav h1,nav ul,nav li,nav h4{
+    display: inline;
+}
+nav li {
+    color: white;
+    padding: 10px;
+}
+nav ul{
+    margin-left: 25%;
+}
+nav li:hover{
+    color:gray;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    background-color: #f4f6f9;
+    color: #1c1c1c;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+h2,h3{
+    color: #002147;
+}
+a{
+    text-decoration: none;
+    color: #007bff;
+}
+footer{
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+#contact a{
+    padding: 10px;
+}
+.my-phone{
+    font-size: 32px;
+    color: #007bff;
+}
+.my-email{
+    font-size: 32px;
+    color: #007bff;
+}
+.my-linkedin{
+    font-size: 32px;
+    color: #007bff;
+}
+.my-github{
+    font-size: 32px;
+    color: #007bff;
+}
+button{
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    border-width:2px solid black;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+
+}
+button:hover{
+    background-color: #0056b3;
+}
+.aboutme p,
+.internship p {
+  line-height: 1.75;
+}
+section {
+  margin-bottom: 60px; 
+  padding: 20px 20px;
+  
+}
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  margin:5px;
+}
+form{
+  background-color:white;
+  color: #000;
+  flex-direction: column;
+  display: flex;
+  width: 240px;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+.hamburger{
+  display: none;
+  border: none;
+}
+.one{
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+}
+#Contactinfo{
+  margin-left: 20px;
+}
+#about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+#arrow_up{
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 85%;
+  border-radius: 100%;
+  border: none;
+  position: fixed;
+  right: 30px; 
+  bottom: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  nav ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav li {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  button, .btn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+
+  .my-phone,
+  .my-email,
+  .my-linkedin,
+  .my-github {
+    font-size: 28px;
+    margin: 6px;
+  }
+
+  footer {
+    font-size: 15px;
+    padding: 12px;
+    margin: 15px;
+  }
+  .hamburger{
+    display: none;
+  }
+}
+
+
+/* RESPONSIVE STYLING */ 
+  @media screen and (max-width: 767px) {
+  #navlinks {
+    display: none;
+  }
+  
+  #navlinks.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  img{
+    height: 150px;
+    width: 150px;
+  }
+  .hamburger {
+  display: block;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1001;
+}
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .btn, button {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .my-phone,
+  .my-email,
+  .my-linkedin,
+  .my-github {
+    font-size: 24px;
+    margin: 8px 0;
+    display: block;
+    text-align: center;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px 5px;
+    margin: 10px;
+  }
+}
+
+
