@@ -129,16 +129,44 @@ section {
   font-weight: 400;
   margin:5px;
 }
-form{
-  background-color:white;
-  color: #000;
-  flex-direction: column;
+#Contact {
   display: flex;
-  width: 240px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#forms {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 20px;
-  margin-top: 10px;
+  width: 90%;
+  max-width: 400px;
   border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 .hamburger{
   display: none;
@@ -167,6 +195,9 @@ form{
   position: fixed;
   right: 30px; 
   bottom: 40px;
+}
+footer{
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
